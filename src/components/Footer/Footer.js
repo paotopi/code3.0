@@ -1,8 +1,8 @@
 import React from 'react';
 import {
-	FooterLinkItems,
-	FooterLinkTitle,
-	FooterLink,
+	// FooterLinkItems,
+	// FooterLinkTitle,
+	// FooterLink,
 	FooterLogo,
 	SocialIcon,
 	FooterRights,
@@ -12,7 +12,9 @@ import {
 	FooterColumn,
 	FooterGrid,
 } from './FooterStyles';
-import { footerData, footerSocialData } from '../../data/FooterData';
+import {  footerSocialData } from '../../data/FooterData';
+// import { footerData, footerSocialData } from '../../data/FooterData';
+
 import { Row, Section } from '../../globalStyles';
 
 function Footer() {
@@ -23,10 +25,10 @@ function Footer() {
 					<FooterColumn id="footerLogo">
 						<FooterLogo to="/">
 							<SocialIcon src="./assets/logo.png" />
-							Delta
+							CodingDuo
 						</FooterLogo>
 						<FooterAddress>
-							69 Street, Delta Building, US Road, Los Angeles 123
+							Europe, Albania - Tirane 1001
 						</FooterAddress>
 
 						<Row align="center" margin="auto  0 0 0" gap="1rem">
@@ -42,7 +44,7 @@ function Footer() {
 							))}
 						</Row>
 					</FooterColumn>
-					{footerData.map((footerItem, index) => (
+					{/* {footerData.map((footerItem, index) => (
 						<FooterLinkItems key={index}>
 							<FooterLinkTitle>{footerItem.title}</FooterLinkTitle>
 							{footerItem.links.map((link, linkIndex) => (
@@ -51,9 +53,9 @@ function Footer() {
 								</FooterLink>
 							))}
 						</FooterLinkItems>
-					))}
+					))} */}
 				</FooterGrid>
-				<FooterRights>Delta © 2021</FooterRights>
+				<FooterRights>CodingDuo © 2019</FooterRights>
 			</FooterWrapper>
 		</Section>
 	);

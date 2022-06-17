@@ -62,6 +62,8 @@ export const FooterGrid = styled.div`
 `;
 
 export const FooterColumn = styled(Column)`
+align-items: center;
+
 	@media screen and (max-width: 999px) {
 		align-items: center;
 		grid-column: 1/-1;
@@ -147,7 +149,7 @@ export const FooterSocialIcon = styled.a`
 export const FooterAddress = styled.div`
 	color: white;
 	margin: 0.4rem auto 0.4rem;
-	max-width: 20rem;
+	max-width: 30rem;
 	font-weight: 500;
 	font-size: 0.875rem;
 	line-height: 2;
